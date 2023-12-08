@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<MiContext>(options => {
-options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaConexion"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaConexion"));
 });
 
 var app = builder.Build();

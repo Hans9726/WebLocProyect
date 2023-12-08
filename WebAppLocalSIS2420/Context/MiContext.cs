@@ -11,6 +11,9 @@ namespace WebAppLocalSIS2420.Context
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
-    
+        public DbSet<Ambientes> Ambientes { get; set; }
+        public DbSet<Alquileres> Alquileres { get; set; }
+
+
     }
 }

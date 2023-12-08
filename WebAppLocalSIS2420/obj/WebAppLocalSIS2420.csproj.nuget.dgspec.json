@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programas c#\\WebAppLocalSIS2420\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj": {}
   },
   "projects": {
-    "D:\\programas c#\\WebAppLocalSIS2420\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programas c#\\WebAppLocalSIS2420\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj",
         "projectName": "WebAppLocalSIS2420",
-        "projectPath": "D:\\programas c#\\WebAppLocalSIS2420\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "D:\\programas c#\\WebAppLocalSIS2420\\WebAppLocalSIS2420\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\WebAppLocalSIS2420.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
