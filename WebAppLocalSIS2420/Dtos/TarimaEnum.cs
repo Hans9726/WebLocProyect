@@ -2,7 +2,8 @@
 {
     public enum TarimaEnum
     {
-        Si=1,
+        Elegir=1,
+        Si=2,
         No
     }
 }

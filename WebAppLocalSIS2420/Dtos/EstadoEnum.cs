@@ -2,7 +2,8 @@
 {
     public enum EstadoEnum
     {
-        Disponible=1,
+        Elegir = 1,
+        Disponible=2,
         Ocupado
     }
 }
