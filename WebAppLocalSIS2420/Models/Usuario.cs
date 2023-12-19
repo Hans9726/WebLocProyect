@@ -16,5 +16,10 @@ namespace WebAppLocalSIS2420.Models
         [Required]
         public RolEnum Rol { get; set; }
 
+
+        //relacion a muchos
+        public virtual List<Alquileres>? Alquileres { get; set; }
+
+
     }
 }

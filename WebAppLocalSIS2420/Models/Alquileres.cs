@@ -19,5 +19,12 @@ namespace WebAppLocalSIS2420.Models
         public int Saldo { get; set; }
         [Required]
         public int Total { get; set; }
+
+        //foreing keys
+        public int UsuarioId { get; set; }
+        public Usuario? Usuario { get; set; }
+
+        public int AmbientesId { get; set; }
+        public Ambientes? Ambientes { get; set; }
     }
 }

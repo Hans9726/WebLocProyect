@@ -28,6 +28,7 @@ namespace WebAppLocalSIS2420.Models
         [Display(Name ="Cargar Foto")]
         public IFormFile? FotoFile { get; set; }
 
-
+        //relacion a muchos
+        public virtual List<Alquileres>? Alquileres { get; set; }
     }
 }
