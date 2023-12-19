@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\wwwroot\\fotos\\1.png",
+      "PackagePath": "staticwebassets\\fotos\\1.png"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

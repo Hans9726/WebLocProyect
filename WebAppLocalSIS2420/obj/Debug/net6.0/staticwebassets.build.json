@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yTrmU84h7kPJQq6kCLrfrABC5eFU3O+JBmustnIab9U=",
+  "Hash": "g2TQ5//38Z9eBxWEPGIC0HW/b1uDytxBvjpa4Pp3Yrg=",
   "Source": "WebAppLocalSIS2420",
   "BasePath": "_content/WebAppLocalSIS2420",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\wwwroot\\fotos\\1.png",
+      "SourceId": "WebAppLocalSIS2420",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\wwwroot\\",
+      "BasePath": "_content/WebAppLocalSIS2420",
+      "RelativePath": "fotos/1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fotos\\1.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\apps git\\WebLocProyect\\WebAppLocalSIS2420\\wwwroot\\js\\site.js",
