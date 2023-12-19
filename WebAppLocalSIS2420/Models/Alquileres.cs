@@ -9,8 +9,7 @@ namespace WebAppLocalSIS2420.Models
         public int IdAlquiler { get; set; }
         [Required]
         public string? NombreCliente { get; set; }
-        [Required]
-        public string? NombreAmbAqluilar { get; set; }
+
         public DateTime FechaReserva { get; set; }
         [Required]
         public DateTime FechaAlquilar { get; set; }

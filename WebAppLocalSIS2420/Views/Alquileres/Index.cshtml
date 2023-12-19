@@ -16,9 +16,6 @@
                 @Html.DisplayNameFor(model => model.NombreCliente)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NombreAmbAqluilar)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.FechaReserva)
             </th>
             <th>
@@ -33,6 +30,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Total)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ambientes)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -41,9 +44,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.NombreCliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NombreAmbAqluilar)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FechaReserva)
@@ -59,6 +59,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ambientes.Direccion)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdAlquiler">Edit</a> |

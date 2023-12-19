@@ -18,7 +18,7 @@ namespace WebAppLocalSIS2420.Migrations
                     IdAlquiler = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NombreCliente = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NombreAmbAqluilar = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    
                     FechaReserva = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaAlquilar = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Adelanto = table.Column<int>(type: "int", nullable: false),

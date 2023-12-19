@@ -42,10 +42,7 @@ namespace WebAppLocalSIS2420.Migrations
                     b.Property<DateTime>("FechaReserva")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NombreAmbAqluilar")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
+                    
                     b.Property<string>("NombreCliente")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

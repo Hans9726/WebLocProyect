@@ -22,9 +22,8 @@ namespace WebAppLocalSIS2420.Controllers
         // GET: Alquileres
         public async Task<IActionResult> Index()
         {
-              return _context.Alquileres != null ? 
-                          View(await _context.Alquileres.ToListAsync()) :
-                          Problem("Entity set 'MiContext.Alquileres'  is null.");
+            var miContext = _context.Alquileres.Include(a => a.Ambientes).Include(a => a.Usuario);
+            return View(await miContext.ToListAsync());
         }
 
         // GET: Alquileres/Details/5
@@ -36,6 +35,8 @@ namespace WebAppLocalSIS2420.Controllers
             }
 
             var alquileres = await _context.Alquileres
+                .Include(a => a.Ambientes)
+                .Include(a => a.Usuario)
                 .FirstOrDefaultAsync(m => m.IdAlquiler == id);
             if (alquileres == null)
             {
@@ -48,6 +49,8 @@ namespace WebAppLocalSIS2420.Controllers
         // GET: Alquileres/Create
         public IActionResult Create()
         {
+            ViewData["AmbientesId"] = new SelectList(_context.Ambientes, "IdAmbiente", "Direccion");
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "IdUsuario", "Email");
             return View();
         }
 
@@ -56,7 +59,7 @@ namespace WebAppLocalSIS2420.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdAlquiler,NombreCliente,NombreAmbAqluilar,FechaReserva,FechaAlquilar,Adelanto,Saldo,Total")] Alquileres alquileres)
+        public async Task<IActionResult> Create([Bind("IdAlquiler,NombreCliente,FechaReserva,FechaAlquilar,Adelanto,Saldo,Total,UsuarioId,AmbientesId")] Alquileres alquileres)
         {
             if (ModelState.IsValid)
             {
@@ -64,6 +67,8 @@ namespace WebAppLocalSIS2420.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["AmbientesId"] = new SelectList(_context.Ambientes, "IdAmbiente", "Direccion", alquileres.AmbientesId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "IdUsuario", "Email", alquileres.UsuarioId);
             return View(alquileres);
         }
 
@@ -80,6 +85,8 @@ namespace WebAppLocalSIS2420.Controllers
             {
                 return NotFound();
             }
+            ViewData["AmbientesId"] = new SelectList(_context.Ambientes, "IdAmbiente", "Direccion", alquileres.AmbientesId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "IdUsuario", "Email", alquileres.UsuarioId);
             return View(alquileres);
         }
 
@@ -88,7 +95,7 @@ namespace WebAppLocalSIS2420.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdAlquiler,NombreCliente,NombreAmbAqluilar,FechaReserva,FechaAlquilar,Adelanto,Saldo,Total")] Alquileres alquileres)
+        public async Task<IActionResult> Edit(int id, [Bind("IdAlquiler,NombreCliente,FechaReserva,FechaAlquilar,Adelanto,Saldo,Total,UsuarioId,AmbientesId")] Alquileres alquileres)
         {
             if (id != alquileres.IdAlquiler)
             {
@@ -115,6 +122,8 @@ namespace WebAppLocalSIS2420.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["AmbientesId"] = new SelectList(_context.Ambientes, "IdAmbiente", "Direccion", alquileres.AmbientesId);
+            ViewData["UsuarioId"] = new SelectList(_context.Usuarios, "IdUsuario", "Email", alquileres.UsuarioId);
             return View(alquileres);
         }
 
@@ -127,6 +136,8 @@ namespace WebAppLocalSIS2420.Controllers
             }
 
             var alquileres = await _context.Alquileres
+                .Include(a => a.Ambientes)
+                .Include(a => a.Usuario)
                 .FirstOrDefaultAsync(m => m.IdAlquiler == id);
             if (alquileres == null)
             {
