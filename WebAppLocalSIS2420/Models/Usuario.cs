@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ActionConstraints;
+using System.ComponentModel.DataAnnotations;
 using WebAppLocalSIS2420.Dtos;
 
 namespace WebAppLocalSIS2420.Models
@@ -19,6 +20,7 @@ namespace WebAppLocalSIS2420.Models
 
         //relacion a muchos
         public virtual List<Alquileres>? Alquileres { get; set; }
+        
 
 
     }
