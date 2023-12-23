@@ -34,14 +34,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Alquileres" asp-action="Index">Alquileres</a>
                         </li>
 
-                        <div class="d-flex">
-                            <span class="navbar-text">
-                                Nombre de Usuario
-                            </span>
-                            <a class="nav-link" asp-controller="Login" asp-action="Logout">Salir</a>
-                        </div>
+                        
 
                     </ul>
+                    <div class="d-flex">
+                            
+                            <a class="nav-link" asp-controller="Login" asp-action="Logout">
+                                Salir
+                            </a>
+
+                        </div>
                 </div>
             </div>
         </nav>
@@ -52,11 +54,13 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - WebAppLocalSIS2420 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privado</a>
-        </div>
-    </footer>
+    
+    <footer class="bg-secondary text-white text-center text-lg-start fixed-bottom">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 - Web"Big-Evenst" - <a asp-area="" asp-controller="Home" asp-action="Privacy text- black">Privado</a>
+    </div>
+    
+  </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

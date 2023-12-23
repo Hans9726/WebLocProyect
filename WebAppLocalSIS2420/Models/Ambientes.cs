@@ -10,6 +10,7 @@ namespace WebAppLocalSIS2420.Models
         public int IdAmbiente { get; set; }
         public string? Fotos { get; set; }
         [Required]
+        [Display(Name = "Nombre del Ambiente")]
         public string? NombreAmbiente { get; set; }
         [Required]
         public string? Direccion { get; set; }
@@ -17,7 +18,7 @@ namespace WebAppLocalSIS2420.Models
         public string? Zona { get; set; }
         [Required]
         public int Capacidad { get; set; }
-        
+
         public TarimaEnum Tarima { get; set; }
         [Required]
         public EstadoEnum Estado { get; set; }

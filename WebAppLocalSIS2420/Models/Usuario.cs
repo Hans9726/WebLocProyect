@@ -9,6 +9,7 @@ namespace WebAppLocalSIS2420.Models
         [Key]
         public int IdUsuario { get; set; }
         [Required]
+        [Display(Name = "Nombre Completo")]
         public string? NombreCompleto { get; set; }
         [Required]
         public string? Email { set; get; }

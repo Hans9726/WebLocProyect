@@ -35,12 +35,20 @@
             </div>
             <div class="form-group">
                 <label asp-for="Tarima" class="control-label"></label>
-                <select asp-for="Tarima" class="form-control"></select>
+                <select asp-for="Tarima" class="form-control">
+                    <option value="1">Elegir Opcion</option>
+                    <option value="2">Si</option>
+                    <option value="3">No</option>
+                </select>
                 <span asp-validation-for="Tarima" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Estado" class="control-label"></label>
-                <select asp-for="Estado" class="form-control"></select>
+                <select asp-for="Estado" class="form-control">
+                    <option value="1">Elegir Opcion</option>
+                    <option value="2">Disponible</option>
+                    <option value="3">Ocupado</option>
+                </select>
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
             <div class="form-group">

@@ -33,7 +33,7 @@ namespace WebAppLocalSIS2420.Controllers
             
             
         }
-        public async Task<IActionResult> Logout()
+        public IActionResult Logout()
         {
             return RedirectToAction("Index", "Login");
         }
